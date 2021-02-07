@@ -1,0 +1,34 @@
+.data
+.code 
+		ldi 6 0x0 // sum
+	loop
+		ldi 0 0xFF0 // switch 1
+		ld 0 0
+		ldi 1 0xFF1 // switch 2
+		ld 1 1
+		ldi 2 0xFF2 // pb1 
+		ld 2 2 // pb1's val
+		ldi 4 0x1
+		and 5 4 2 // check pb1
+		jz loop2
+		jmp handle1
+	loop2 ldi 3 0xFF3 //pb2 
+		ld 3 3 // pb's val
+		and 5 4 3
+		jz loop
+		jmp handle2
+	handle1 add 6 6 0
+			ldi 2 0xFF4 // 7-seg
+			st 2 6
+			jmp loop
+	handle2 
+			ldi 2 0x0 
+			mov 3 1
+	mult    add 2 2 3   
+			dec 1           
+			jz out
+			jmp mult
+	out 	add 6 6 2
+			ldi 2 0xFF4 // 7-seg
+			st 2 6
+			jmp loop

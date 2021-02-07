@@ -1,0 +1,6 @@
+ldi 3 0x0004
+mov 1 3
+ldi 0 0x0003
+sub 2 1 0
+inc 2 
+dec 0

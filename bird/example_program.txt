@@ -1,0 +1,27 @@
+.code
+	ldi 6 0x0
+	ldi 1 0x901
+	ldi 2 0x900
+loop0	ld 5 1
+	ldi 3 0x0001
+	and 5 5 3
+	jz loop0
+	ldi 3 0x000F
+	ld 5 2
+	and 3 3 5
+	jz save
+	call addition
+	jmp loop0
+save ld 4 2
+	jmp loop0
+addition 
+loop1 ld 5 1
+	ldi 3 0x0001
+	and 5 5 3
+	jz loop1
+	ld 5 2
+	add 4 4 5
+	mov 6 4
+	ldi 3 0xB00
+	st 3 6
+	ret
