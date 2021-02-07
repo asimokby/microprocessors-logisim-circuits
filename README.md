@@ -1,7 +1,7 @@
 # Microprosessors Logisim Circuits 
 
 ### Circuits
-This repository contains a sequence of 5 CPUs' Logisim designs. The designs are taught in the course **CSE4117** at Marmara Univeristy. The Lecute notes can be found [here](http://www.marmaralectures.com/). You may find this repo helpful if you are taking the course or if you are just learning Logisim.
+This repository contains a sequence of 5 CPUs' Logisim designs. The designs are taught in the course **CSE4117** at Marmara University. The Lecture notes can be found [here](http://www.marmaralectures.com/). You may find this repo helpful if you are taking the course or if you are just learning Logisim.
 
 These CPUs are named after the evolutionary sequence of animals: Invertebrate, fish, frog, reptile, and bird. The properties of each are as follows:
 
